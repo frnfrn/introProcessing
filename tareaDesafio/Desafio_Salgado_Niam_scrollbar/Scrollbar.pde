@@ -55,7 +55,7 @@ class Scrollbar {
     noStroke();
     fill(255);
     rect(xpos, ypos, swidth, sheight);
-    fill(100, 100, 155);
+    fill(0, 100, 155);
     rect(spos, ypos, sheight, sheight);
   }
 
