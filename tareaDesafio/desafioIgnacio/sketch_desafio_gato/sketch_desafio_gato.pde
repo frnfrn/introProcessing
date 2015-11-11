@@ -3,13 +3,13 @@ Scrollbar graph;
 int oldAmount = 0;
 
 void setup() {
-  fullScreen();
+  size(720, 480);
   graph = new Scrollbar(0, height-40, width, 10, 10);
   creaNiams(graph.getPos());
 }
 
 void draw() {
-  background(10, 0, 50);
+  background(10, 100, 50);
   //PRIMERO EL CONTROL
   noStroke();
   rect(0, height-40, width, 40);    
@@ -31,10 +31,11 @@ void draw() {
 
 void creaNiams(int cuantosNiams) {
   niam = new Gato[cuantosNiams];
-  PImage niamCat = loadImage("cat.gif");
+  PImage niamCat = loadImage("gir.png");
   for (int i = 0; i < niam.length; i++) {
     float x = random(0, width/5*4); 
     float y = map(i, 0, niam.length, 0, height/5*4); 
     niam[i] = new Gato(niamCat, x, y);
   }
 }
+//sl2 (para ver cambios)
