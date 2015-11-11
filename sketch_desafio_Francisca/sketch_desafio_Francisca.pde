@@ -9,7 +9,7 @@ void setup() {
 }
 
 void draw() {
-  background(196, 246, 245);
+  background(random (255), random(255), random(255));
   //PRIMERO EL CONTROL
   noStroke();
   rect(0, height-105, width, 12);    
