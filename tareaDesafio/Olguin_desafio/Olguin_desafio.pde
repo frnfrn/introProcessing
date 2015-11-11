@@ -3,16 +3,16 @@ int x = 1;
 
 void setup () {
   fullScreen();
-  background(50,50,100);
-  graph = new Scrollbar(0, height-40, width, 10, 10);
+  background(random(0,255),random(0,255),random(0,255));
+  graph = new Scrollbar(0, height-80, width, 30, 30);
 }
 void draw () {
   stroke(200,200,255);
   line(x, height, x, height-graph.getPos());
-  x = x + 1;
+  x = x + 6;
   if (x > width) {
     x = 1;
-    background(50,50,100);
+    background(random(0,255),random(0,255),random(0,255));
   }   
   noStroke();
   rect(0, height-40, width, 40);    
